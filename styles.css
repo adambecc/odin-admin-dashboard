@@ -1,0 +1,69 @@
+body{
+    background-color: #e5e7eb;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*sidebar container*/
+.sidebar{
+    background-color: #0ea5e9;
+    width: 230px;
+    height: 940px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+}
+
+/*big logo dashboard*/
+.logo1 {
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto con el logo */
+    gap: 10px; /* Espacio entre el logo y el texto */
+}
+
+/*dashboard text*/
+.dashboard {
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    font-weight: 900;
+    margin-top: 5px;
+}
+
+/*all other text in the menu*/
+.menu {
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: x-large;
+    margin-left: 14px;
+}
+
+/*svg adjustment of the big logo*/
+.biglogo{
+    width: 50px;
+}
+
+/*svg adjustment of the small logo*/
+svg {
+    color: #ffffff; /* Cambia el color del icono */
+    width: 25px; /* Opcional: ajusta el tamaño del SVG */
+}
+
+
+/*all the other logos*/
+.logo2, .logo3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 12px;
+    margin-top: 25px;
+}
+
+/*small blak gaps in side the menu*/
+.space1, .space2 {
+    background-color: #0ea5e9;
+    height: 40px;
+}
