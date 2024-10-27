@@ -1,69 +1,272 @@
-body{
+body {
     background-color: #e5e7eb;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-/*sidebar container*/
-.sidebar{
-    background-color: #0ea5e9;
+/* sidebar container */
+.sidebar {
+    display: flex; /* Cambiado a flex */
+    flex-direction: column; /* Elementos en columna */
+    background-color: #0b97d8;
     width: 230px;
     height: 940px;
-    margin: 0;
-    padding: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-/*big logo dashboard*/
+/* big logo dashboard */
 .logo1 {
     display: flex;
     align-items: center; /* Centra verticalmente el texto con el logo */
     gap: 10px; /* Espacio entre el logo y el texto */
 }
 
-/*dashboard text*/
+/* dashboard text */
 .dashboard {
     color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: xx-large;
     font-weight: 900;
     margin-top: 5px;
 }
 
-/*all other text in the menu*/
+/* all other text in the menu */
 .menu {
     color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 900;
     font-size: x-large;
     margin-left: 14px;
 }
 
-/*svg adjustment of the big logo*/
-.biglogo{
+/* svg adjustment of the big logo */
+.biglogo {
     width: 50px;
 }
 
-/*svg adjustment of the small logo*/
+/* svg adjustment of the small logo */
 svg {
     color: #ffffff; /* Cambia el color del icono */
-    width: 25px; /* Opcional: ajusta el tamaño del SVG */
+    width: 25px; /* Ajusta el tamaño del SVG */
 }
 
-
-/*all the other logos*/
+/* all the other logos */
 .logo2, .logo3 {
-    display: flex;
+    display: flex; /* Cambiado a flex */
     align-items: center;
     gap: 10px;
     margin-left: 12px;
     margin-top: 25px;
 }
 
-/*small blak gaps in side the menu*/
+/* small black gaps inside the menu */
 .space1, .space2 {
-    background-color: #0ea5e9;
+    background-color: #0b97d8;
     height: 40px;
 }
+
+/* Barra superior (topbar) */
+.topbar {
+    display: flex; /* Para alinear los elementos dentro de la barra superior */
+    background-color: white; /* El mismo color que la barra lateral para uniformidad */
+    height: 200px; /* Puedes ajustar la altura como prefieras */
+    width: calc(100% - 230px); /* El 100% del ancho menos la barra lateral */
+    position: absolute; /* Para asegurarse de que esté encima del contenido */
+    top: 0; /* Coloca la barra en la parte superior */
+    left: 230px; /* Deja espacio para la barra lateral */
+    padding-left: 15px; /* Margen para el contenido de la barra */
+    margin-left: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra solo por debajo */
+}
+
+/* search logo */
+.searchlogo svg {
+    width: 30px; /* Ajusta el tamaño del logo de búsqueda */
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+/* Search bar */
+.searchspace {
+    display: flex; /* Cambiado a flex */
+    width: 800px; /* Ancho más manejable */
+    height: 32px; /* Altura más manejable */
+    margin-left: 25px; /* Cambia left por margin-left para centrar */
+    margin-top: 27px;
+    background-color: #d2dbe7;
+    border-radius: 20px;
+}
+
+/* notifications logo (bell) */
+.notilogo svg {
+    width: 30px; /* Ajusta el tamaño del logo de búsqueda */
+    margin-top: 30px;
+    margin-left: 350px;
+}
+
+/* profile pic */
+.pfp1 img{
+    display: flex; /* Cambiado a flex */
+    align-items: center; /* Centra verticalmente la imagen */
+    align-self: flex-end;
+    margin-left: 35px;
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+/* username */
+.username {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: 7px;
+    margin-left: 25px;
+}
+
+.pfp2 img {
+    height: 1000px;
+    width: 2000px;
+    color: #000000;
+    margin-top: 90px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    width: 90px;
+    height: 90px;
+    border-radius: 150px;
+    margin-left: 40px;
+}
+
+.welcoming {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-left: 150px;
+    margin-bottom: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.welcoming_user {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-left: 150px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+.buttons {
+    width: 400px;
+    height: 60px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2em;
+    margin-left: 1120px;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+#button {
+    width: 250px;
+    height: 45px;
+    border-radius: 25px;
+    border: 0;
+    color:white;
+    background-color: #0b97d8;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+#title1 {
+    height: 100px;
+    width: 1100px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    margin-left: 300px;
+    margin-top: 220px;
+    font-size:25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+.grids {
+    height: 100px;
+    width: 900px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    margin-left: 290px;
+    margin-top: 210px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+    grid-template-rows: repeat(3, auto);
+    gap: 25px; /* Espacio entre los elementos de la cuadrícula */
+    margin-top: 130px;
+    margin-left: 150px;
+}
+
+.project-item {
+    background-color: orange;
+    border-radius: 10px;
+    height: 195px;
+    width: 420px;
+}
+
+.project {
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 175px;
+    width: 380px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 15px;
+    margin-left: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project-icons {
+    position: absolute;
+    display: flex;
+    margin-left: 270px;
+    gap: 13px;
+}
+
+#title2 {
+    height: 40px;
+    width: 1100px;
+    display: flex;
+    position: absolute;
+    top: 0;
+    margin-top: 220px;
+    font-size:25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+.announcements {
+    height: 700px;
+    width: 300px;
+    margin-left: 1240px;
+}
+
+.adboard {
+    height: 700px;
+    width: 300px;
+    margin-left: 1240px;
+}
+
